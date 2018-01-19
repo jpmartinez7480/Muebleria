@@ -55,14 +55,12 @@
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
-    
 }
 
 .boton1:hover {
     background-color: #4CAF50;
     color: white;
 }
-
 
 .carousel-control.right, .carousel-control.left {
     background-image: none;
@@ -74,15 +72,44 @@
 }
 
 .carousel-indicators li.active {
-    background-color: #f4511e;
+    background-color: #0000FF;
+}
+
+.carousel-inner img {
+    width: 150%;
+    max-height: 150%;
+    text-align: center;
+}
+
+.carousel-inner{
+    height: 700px;
+    margin: 25px 0;
 }
 
 .item h4 {
+    color: #00FFFF;
     font-size: 19px;
-    line-height: 1.375em;
+    line-height: 2em;
     font-weight: 400;
     font-style: italic;
-    margin: 70px 0;
+    margin: 160px 0;
+}
+
+.item h3 {
+    color: #00FFFF;
+    font-size: 19px;
+    line-height: 2em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 210px 0;
+}
+
+.h4especial {
+    font-size: 19px;
+    line-height: 2em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 160px 0;
 }
 
 .item span {
