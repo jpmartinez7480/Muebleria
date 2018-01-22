@@ -13,197 +13,303 @@
 
   	<!-- bootstrap css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  
+    
 
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous"> Esta wea me trae problemas :c -->
       	
   	<link rel="stylesheet" type="text/css" href="css/styles.css">  
     <link rel="stylesheet" type="text/js" href="script/js/app.js">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
   </head>
 
-  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset = "60">
 
     <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#myCarousel">Logo</a>
+        <div class="container">
+          <div class="navbar-header">
+            <button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#myNavbar">
+              <span class = "icon-bar"></span>
+              <span class = "icon-bar"></span>
+              <span class = "icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#myCarousel">Logo</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar" aria-expanded = "false" style = "height: 1px;">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="botonn botonn1" href="#Empresa">Empresa</a></li>
+              <li><a class="botonn botonn1" href="#Portafolio">Portafolio</a></li>
+              <li><a class="botonn botonn1" href="#Ubicacion">Ubicacion</a></li>
+              <li><a class="botonn botonn1" href="#Contacto">Contacto</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a class="botonn botonn1" href="#Empresa">Empresa</a></li>
-            <li><a class="botonn botonn1" href="#Portafolio">Portafolio</a></li>
-            <li><a class="botonn botonn1" href="#Contacto">Contacto</a></li>
-            <li><a class="botonn botonn1" href="#googleMap">Ubicación</a></li>
-          </ul>
-        </div>
-      </div>
     </nav>
 
+    <!-- carousel -->
+    <!-- carousel escritorio -->
+    <div id="myCarousel" class="carousel slide hidden-xs" data-ride="carousel" data-pause = "false">
+    <!-- Indicators -->
+      <ol class="carousel-indicators" style="margin-bottom: 110px;">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
 
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-  </ol>
+      <div class="carousel-inner">
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/Mueble1.jpg" alt="Dormitorio">
+          <div class="carousel-caption">
+            <h4> Al estilo de los "Los Angeles - California" ! ! !. </h4>
+          </div>
+        </div>
 
-    <div class="item active">
-      <img src="img/Mueble1.jpg" alt="Dormitorio">
-      <div class="carousel-caption">
-        <h4> Al estilo de los "Los Angeles - California" ! ! !. </h4>
+        <div class="item">
+          <img src="img/Mueble2.jpg" alt="Dormitorio">
+          <div class="carousel-caption">
+            <h4> Renueva tu dormitorio y convierte en un Gladiador ! ! !. </h4>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="img/Mueble3.jpg" alt="Dormitorio">
+          <div class="carousel-caption">
+            <h4> No esperes mas convierte tu dormitorio en esta hermosura de postal ! ! !. </h4>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="img/Mueble4.jpg" alt="Cocina">
+          <div class="carousel-caption">
+            <h4> Atrevete al cambio ! ! !. </h4>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- carousel escritorio -->
+
+    <!-- carousel xs -->
+    <div class = "visible-xs">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" data-pause = "false">
+      <!-- Indicators -->
+        <ol class="carousel-indicators mobile">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <div class="carousel-inner">
+
+          <div class="item active">
+            <img src="img/Mueble1.jpg" alt="Dormitorio">
+          </div>
+
+          <div class="item">
+            <img src="img/Mueble2.jpg" alt="Dormitorio">
+          </div>
+
+          <div class="item">
+            <img src="img/Mueble3.jpg" alt="Dormitorio">
+          </div>
+
+          <div class="item">
+            <img src="img/Mueble4.jpg" alt="Cocina">
+          </div>
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </div>
+    <!-- carousel xs -->
 
-    <div class="item">
-      <img src="img/Mueble2.jpg" alt="Dormitorio">
-      <div class="carousel-caption">
-        <h3> Renueva tu dormitorio y convierte en un Gladiador ! ! !. </h3>
-      </div>
+    <!-- carousel -->
+    
+    <div id="Empresa" class = "col-lg-12 col-md-12 col-sm-12 col-xs-12 barraDivisora">
+      <h2 style = "text-align: center;">NOSOTROS</h2>
     </div>
-
-    <div class="item">
-      <img src="img/Mueble3.jpg" alt="Dormitorio">
-      <div class="carousel-caption">
-        <h4 > No esperes mas convierte tu dormitorio en esta hermosura de postal ! ! !. </h4>
+    <!-- info empresa -->
+      <div class="container-fluid bg-grey ">
+        <div class="row">
+          <div class="col-sm-8">
+                <div class="textoddd">
+                  Empresa
+                </div>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <br><button class="boton boton1">Get in Touch</button>
+          </div>
+          <div class="col-sm-4" style = "margin-top: 45px;">
+            <span class="glyphicon glyphicon-signal logo"></span>
+          </div>
+        </div>
       </div>
+
+    <div id="Portafolio" class = "col-lg-12 col-md-12 col-sm-12 col-xs-12 barraDivisora">
+      <h2 style = "text-align: center;">NUESTRO TRABAJO</h2>
     </div>
-
-    <div class="item">
-      <img src="img/Mueble4.jpg" alt="Cocina">
-      <div class="carousel-caption">
-        <h4> Atrevete al cambio ! ! !. </h4>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-
-    <div id="Empresa" class="container-fluid bg-grey ">
-      <div class="row">
-        <div class="col-sm-8">
-              <div class="textoddd">
-                Empresa
-              </div>
-          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <br><button class="boton boton1">Get in Touch</button>
+    <div  class="container-fluid text-center" style = "margin-top: 35px;">
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img src="img/Mueble4.jpg" alt="Cocina">
+            <p style = "margin-top: 5px;"><strong>Cocina</strong></p>
+          </div>      
+            <button class="boton boton1"> Ver galeria </button>
         </div>
         <div class="col-sm-4">
-          <span class="glyphicon glyphicon-signal logo"></span>
+          <div class="thumbnail">
+            <img src="img/Mueble2.jpg" alt="LivinComedor">
+            <p style = "margin-top: 5px;"><strong>Living - comedor </strong></p>
+          </div>
+            <button class="boton boton1"> Ver galeria </button>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img src="img/Mueble3.jpg" alt="Dormitorio">
+            <p  style = "margin-top: 5px;"><strong>Dormitorio</strong></p>
+          </div>
+            <button class="boton boton1"> Ver galeria </button>
         </div>
       </div>
     </div>
 
-  <div id = "Portafolio" class="container-fluid text-center ">
-    <div class="textoddd">
-      Portafolio
+    <div id = "Ubicacion" class = "col-lg-12 col-md-12 col-sm-12 col-xs-12 barraDivisora">
+      <h2 style = "text-align: center;">UBICACI&Oacute;N</h2>
     </div>
-    <div class="row text-center">
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="img/Mueble4.jpg" alt="Cocina">
-          <p><strong>Cocina</strong></p>
-        </div>      
-          <button class="boton boton1"> Cotizar Muebles </button>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="img/Mueble2.jpg" alt="LivinComedor">
-          <p><strong>Living - comedor </strong></p>
-        </div>
-          <button class="boton boton1"> Cotizar Muebles </button>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="img/Mueble3.jpg" alt="Dormitorio">
-          <p><strong>Dormitorio</strong></p>
-        </div>
-          <button class="boton boton1"> Cotizar Muebles </button>
-      </div>
-  </div>
-
-
-  <h2 class="container-fluids">  </h2> <!-- Para separa en la pagina no me funco de otra forma :c -->
-
-  <div id="Contacto" class="container-fluid bg-grey">
-    <h2 class="text-center">CONTACT Este tenemos que cambiarlo jiji   </h2>
-    <div class="row">
-      <div class="col-sm-5">
-        <p> Esto tenemos que cambiarlo cuando llegue la información </p>
-        <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-        <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-        <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p> 
-      </div>
-      <div class="col-sm-7">
-        <div class="row">
-          <div class="col-sm-6 form-group">
-            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+      <div class = "container-fluid hidden-xs"> 
+        <div class = "row">
+          <div class = "col-lg-4 col-md-4"  style = "margin-top: 30px;">
+            <p> Agregar texto de como llegar (casi de publicidad) </p>
+            <p>Asi conoces como llegar a un estadio!!!! </p>
           </div>
-          <div class="col-sm-6 form-group">
-            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          <div class = "col-lg-8 col-md-8"  style = "margin-top: 30px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.717943493525!2d-70.66120428500996!3d-33.40452210254221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5d793bb7325%3A0xe5a14691ce225e43!2sEstadio+Santa+Laura!5e0!3m2!1ses!2scl!4v1516596414584" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
         </div>
-        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-        <div class="row">
-          <div class="col-sm-12 form-group">
-            <button class="boton boton1" type="submit">Send</button>
-          </div>
-        </div> 
       </div>
+
+      <div class = "visible-xs">
+        <div class = "container nmp">
+          <div class = "col-sm-12 col-xs-12" style = "margin-top: 20px;">
+            <button type = "button" class = "btn btn-primary miBoton">Ver en Maps</button>
+          </div>
+          <div class = "col-sm-12 col-xs-12" style = "margin-top: 20px;">
+            <button type = "button" class = "btn btn-primary miBoton">Ver en Waze</button>
+          </div>
+        </div>
+      </div>
+
+    <div id="Contacto" class = "col-lg-12 col-md-12 col-sm-12 col-xs-12 barraDivisora" style = "margin-top: 15px;">
+      <h2 style = "text-align: center;">CONT&Aacute;CTANOS</h2>
     </div>
-  </div>
 
-  <h2 class="container-fluids">  </h2> <!-- Para separa en la pagina no me funco de otra forma :c -->
+    <div  class="container-fluid bg-grey" style= "margin-top: 65px;">
+      <div class="row">
+        <div class="col-sm-4">
+          <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+          <hr>
+          <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+          <hr>
+          <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p> 
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="margin-top: 3px;">
+          <form class = "form-horizontal">
+            <div class ="form-group">
+              <div class = "col-sm-12">
+                <input type = "text" class = "form-control" id="name" placeholder="Nombre Apellido">
+              </div>
+            </div>
+            <div class ="form-group">
+              <div class = "col-sm-12">
+                <input type = "email" class = "form-control" id="mail" placeholder="correo@correo.aa">
+              </div>
+            </div>
+            <div class ="form-group">
+              <div class = "col-sm-12">
+                <input type = "text" class = "form-control" id="phone" placeholder="+569 999 9999">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class = "col-sm-4">
+          <div class = "form-group">
+            <textarea name = "message" id = "msje" class="form-control" placeholder="Mensaje" rows = "6" required></textarea>
+          </div>
+          <button type = "button" class = "btn btn-primary miBoton">Enviar</button>
+        </div>
+        
+        
+      </div> 
+    </div>
 
-
-      <!-- Add Google Maps  Acá tengo que sacar la wea d script, pero ahí lo hago que no cache como tirarlo para la otra parte -->
-  <div class="Mapa" id="googleMap" style="height:500px;width:100%;"> 
-
-  </div>
-  <script>
-  function myMap() {
-  var myCenter = new google.maps.LatLng(-33.6086426, -70.6867724);
-  var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-  var marker = new google.maps.Marker({position:myCenter});
-  marker.setMap(map);
-  }
-  </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAm0_kV3zg4gNcenQgX0JiFEX1qA9cmGzg&callback=myMap"></script>
-
+    <footer class="container-fluid text-center">
+      <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+      <p> Podriamos colocar eso del face y eso de las redes sociales  </a></p> 
+    </footer>
 
   <!-- jquery, bootstrap js -->
   <!-- No sacar de aqui -->
-  	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  	
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  	
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  	      
+    <script>
+      $(document).ready(function(){
+          // Add smooth scrolling to all links in navbar + footer link
+          $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+           // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+            });
+          } // End if
+        });
+      })
+  </script>
+
 
   </body>
-
-  <footer class="container-fluid text-center">
-    <a href="#myPage" title="To Top">
-      <span class="glyphicon glyphicon-chevron-up"></span>
-    </a>
-    <p> Podriamos colocar eso del face y eso de las redes sociales  </a></p> 
-  </footer>
 
 </html>
