@@ -362,3 +362,12 @@ i {
  .footer-four > img {
      width:80%;
  }
+
+ .modal-body{
+    background-color:white;
+ }
+
+ .btnCotizar{
+    border-radius: 0px;
+    width: 100%;
+ }

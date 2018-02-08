@@ -264,11 +264,52 @@
           <div class = "form-group">
             <textarea name = "message" id = "msje" class="form-control" placeholder="Mensaje" rows = "6" required></textarea>
           </div>
-          <button type = "button" class = "btn btn-primary miBoton">Enviar</button>
+          <button type = "button" id = "enviar" class = "btn btn-primary miBoton">Enviar</button>
         </div>
         
         
       </div> 
+    </div>
+
+    <div class = "modal fade" id = "formCotizar" tabindex = "1" role = "document" style = "margin-top: 50px;">
+      <div class = "modal-dialog modal-sm">
+        <div class = "modal-content">
+          <div class = "modal-body col-sm-12">
+            <!--logo muebleria -->
+            <h4 class = "texto">INGRESA TUS DATOS</h4>
+          <div class = "col-sm-12">
+            <div class = "formulario">
+              <form class = "form-horizontal">
+                <div class = "form-group">
+                  <input type = "text" class = "form-control" id = "nombreCliente" placeholder="Nombre Completo(*)">
+                </div>
+                <div class = "form-group">
+                  <input type = "text" class = "form-control" id = "rut" placeholder="Rut Cliente(*)">
+                </div>
+                <div class = "form-group">
+                  <input type = "text" class = "form-control" id = "telefono" placeholder="Telefono de contacto(*)">
+                </div>
+                <div class = "form-group">
+                  <input type = "text" class = "form-control" id = "mail2" placeholder="Correo de contacto(*)">
+                </div>
+                <div class = "form-group">
+                  <input type = "text" class = "form-control" id = "mail2" placeholder="aqui va el Mueble despues lo arreglo">
+                </div>
+                <div class = "form-group">
+                  <button type = "button" class = "btn btn-info btn-block btnCotizar">Cotizar</button>
+                </div>
+              </form>
+            </div>
+            <div class = "ok" style="display: none;">
+              <center><h3>Gracias!! Lo llamaremos a la brevedad.</center>
+            </div>
+            <div class = "failure" style = "display: none;">
+              <center><h3>Error. La cotizaci&oacute;n no pudo ser enviada.Intente nuevamente</h3></center>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>   
     </div>
 
     <footer class="footer-bottom">
@@ -319,7 +360,35 @@
         });
       })
   </script>
+  
+  <script>
+    $('#enviar').click(function(e){
+      e.preventDefault();
+      var full_name = $('#name').val();
+      var phone = $('#phone').val();
+      var mail = $('#mail').val();
+      var mensaje = $('msje').val();
+      $.ajax({
+        type: 'POST',
+        url: 'mail.php',
+        data:{
+          name: full_name,
+          phone: phone,
+          email:mail,
+          mensaje:mensaje
+        },
+        success:function(data){
+          $('.formulario').hide();
+          if(data == 1)
+            $('.ok').show();
+          else
+            $('.failure').show();
+        }
+      });
+    });
 
+    //agregar enviar de cotizacion
+  </script>
 
   </body>
 
